@@ -4,3 +4,8 @@
 
 // Input: s = "Hello"
 // Output: "hello"
+class Solution {
+    public String toLowerCase(String s) {
+        return s.toLowerCase();
+    }
+}
