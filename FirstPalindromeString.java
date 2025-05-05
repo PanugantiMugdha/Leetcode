@@ -6,3 +6,18 @@
 // Output: "ada"
 // Explanation: The first string that is palindromic is "ada".
 // Note that "racecar" is also palindromic, but it is not the first.
+class Solution {
+    public String firstPalindrome(String[] words) {
+        for(int i=0;i<words.length;i++)
+        {
+            String original=words[i];
+            String clean=original.toLowerCase().replaceAll("[^a-z0-9]","");
+            String reversed= new StringBuilder(clean).reverse().toString();
+            if(clean.equals(reversed))
+            {
+                return original;
+            }
+        }
+        return ""; 
+    }
+}
