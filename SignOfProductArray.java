@@ -8,3 +8,27 @@
 // Input: nums = [-1,-2,-3,-4,3,2,1]
 // Output: 1
 // Explanation: The product of all values in the array is 144, and signFunc(144) = 1
+// -------------ORIGINAL------------------
+// class Solution {
+//     public int arraySign(int[] nums) {
+//         int product=1;
+//         int s=1;
+//         for(int i=0;i<nums.length;i++)
+//         {
+//             product*=nums[i];
+//         }
+//         if(product>=1)
+//         {
+//             s=1;
+//         }
+//         if(product<0)
+//         {
+//             s=-1;
+//         }
+//         else if(product==0)
+//         {
+//             s=0;
+//         }
+//         return s;
+//     }
+// }
