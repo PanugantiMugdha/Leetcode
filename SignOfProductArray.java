@@ -33,3 +33,13 @@
 //     }
 // }
 // ----------------------------------------------------------------OPTIMISED-----------------------------------------------------------------------
+class Solution {
+    public int arraySign(int[] nums) {
+        int sign = 1; // Start with positive sign
+        for (int num : nums) {
+            if (num == 0) return 0;   // If any element is 0, product is 0
+            if (num < 0) sign *= -1;  // Flip sign for every negative number
+        }
+        return sign; // 1 if positive, -1 if negative
+    }
+}
