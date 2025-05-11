@@ -13,3 +13,32 @@
 // Input: moves = "UD"
 // Output: true
 // Explanation: The robot moves up once, and then down once. All moves have the same magnitude, so it ended up at the origin where it started. Therefore, we return true.
+// class Solution {
+//     public boolean judgeCircle(String moves) {
+//         String s1="UD";
+//         String s2="DU";
+//         String s3="LR";
+//         String s4="RL";
+//         if(moves.equals(s1) || moves.equals(s2) || moves.equals(s3) || moves.equals(s4))
+//         {
+//             return true;
+//         }
+//         return false;
+//     }
+// }
+class Solution {
+    public boolean judgeCircle(String moves) {
+        int x = 0, y = 0;
+
+        for (char move : moves.toCharArray()) {
+            switch (move) {
+                case 'U': y++; break;
+                case 'D': y--; break;
+                case 'L': x--; break;
+                case 'R': x++; break;
+            }
+        }
+
+        return x == 0 && y == 0;
+    }
+}
