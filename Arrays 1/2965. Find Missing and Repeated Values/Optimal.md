@@ -1,4 +1,4 @@
-Optimal (O(1) space) approach — Theory
+# Optimal (O(1) space) approach — Theory
 
 Compute sum of numbers and sum of squares from the grid.
 
